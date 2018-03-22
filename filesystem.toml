@@ -12,7 +12,7 @@ prompt = false
 #automake = {}
 #bash = {}
 #binutils = {}
-#ca-certificates = {}
+ca-certificates = {}
 #cargo = {}
 #cleye = {}
 #contain = {}
@@ -38,6 +38,7 @@ logd = {}
 #nasm = {}
 netdb = {}
 netstack = {}
+netsurf = {}
 netutils = {}
 #newlib = {}
 nulld = {}
@@ -96,6 +97,8 @@ pcid /etc/pcid/filesystem.toml
 path = "/etc/init.d/10_net"
 data = """
 smolnetd
+dnsd
+dhcpd -b
 """
 
 [[files]]
